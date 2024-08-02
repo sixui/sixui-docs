@@ -1,0 +1,22 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "header-max-length": [0],
+    "subject-case": [0],
+    "type-enum": [
+      2,
+      "always",
+      [
+        "wip",
+        "feat",
+        "fix",
+        "doc",
+        "style",
+        "refactor",
+        "test",
+        "chore",
+        "release"
+      ]
+    ]
+  }
+}
