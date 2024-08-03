@@ -46,14 +46,8 @@ export const Page: React.FC<IPageProps> = (props) => {
       <div {...stylex.props(styles.inner)}>
         <div {...stylex.props(styles.main)}>
           <Typography as='h2' sx={styles.title} variant='headline'>
-            Anchored
+            Playground
           </Typography>
-          <p>Description</p>
-
-          <Typography as='h2' sx={styles.title} variant='headline'>
-            Anchored
-          </Typography>
-          <p>Description</p>
 
           {children}
         </div>

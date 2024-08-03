@@ -18,6 +18,7 @@ import { Route as rootRoute } from './routes/__root';
 
 const AboutLazyImport = createFileRoute('/about')();
 const IndexLazyImport = createFileRoute('/')();
+const ComponentsButtonLazyImport = createFileRoute('/components/button')();
 const ComponentsAnchoredLazyImport = createFileRoute('/components/anchored')();
 
 // Create/Update Routes
@@ -31,6 +32,13 @@ const IndexLazyRoute = IndexLazyImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route));
+
+const ComponentsButtonLazyRoute = ComponentsButtonLazyImport.update({
+  path: '/components/button',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() =>
+  import('./routes/components/button.lazy').then((d) => d.Route),
+);
 
 const ComponentsAnchoredLazyRoute = ComponentsAnchoredLazyImport.update({
   path: '/components/anchored',
@@ -64,6 +72,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ComponentsAnchoredLazyImport;
       parentRoute: typeof rootRoute;
     };
+    '/components/button': {
+      id: '/components/button';
+      path: '/components/button';
+      fullPath: '/components/button';
+      preLoaderRoute: typeof ComponentsButtonLazyImport;
+      parentRoute: typeof rootRoute;
+    };
   }
 }
 
@@ -73,6 +88,7 @@ export const routeTree = rootRoute.addChildren({
   IndexLazyRoute,
   AboutLazyRoute,
   ComponentsAnchoredLazyRoute,
+  ComponentsButtonLazyRoute,
 });
 
 /* prettier-ignore-end */
@@ -85,7 +101,8 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
-        "/components/anchored"
+        "/components/anchored",
+        "/components/button"
       ]
     },
     "/": {
@@ -96,6 +113,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/components/anchored": {
       "filePath": "components/anchored.lazy.tsx"
+    },
+    "/components/button": {
+      "filePath": "components/button.lazy.tsx"
     }
   }
 }

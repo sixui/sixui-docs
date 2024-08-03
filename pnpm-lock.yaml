@@ -24,8 +24,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       '@sixui/ui':
-        specifier: ^0.0.402
-        version: 0.0.402(@stylexjs/stylex@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.0.407
+        version: 0.0.407(@stylexjs/stylex@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router':
         specifier: ^1.46.2
         version: 1.46.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -670,8 +670,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sixui/ui@0.0.402':
-    resolution: {integrity: sha512-KnkFLXb4vFcNF6mGav3Mr+RV6ZFyeuClhVgm7Sl8EXKxstSVL7B3ZoCdLXL0aTcYa7S9hmJq7mI7SeIDjgJf3A==}
+  '@sixui/ui@0.0.407':
+    resolution: {integrity: sha512-sA8Khjs9WZVfoVIpTKH95Ms0KtMWmo1ZptOjuo611ApWc5mrSohMLT4N/3chU4V03ZHeDTW+B0orptkeu2qc3w==}
     engines: {node: '>=20', pnpm: '>=9'}
     peerDependencies:
       '@stylexjs/stylex': ^0.7.5
@@ -3260,7 +3260,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.19.2':
     optional: true
 
-  '@sixui/ui@0.0.402(@stylexjs/stylex@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@sixui/ui@0.0.407(@stylexjs/stylex@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/react': 0.26.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@material/material-color-utilities': 0.3.0

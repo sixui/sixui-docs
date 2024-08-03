@@ -9,15 +9,17 @@ export const playgroundStyles = stylex.create({
     gridTemplateColumns: '1fr 240px',
     gridAutoRows: '1fr',
     gap: 8,
+    borderRadius: shapeTokens.corner$sm,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: colorSchemeTokens.outlineVariant,
   },
   componentPanel: {
     position: 'relative',
     display: 'flex',
-    borderRadius: shapeTokens.corner$md,
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderColor: colorSchemeTokens.outlineVariant,
     overflow: 'hidden',
+    borderTopLeftRadius: shapeTokens.corner$sm,
+    borderBottomLeftRadius: shapeTokens.corner$sm,
   },
   componentWrapper: {
     display: 'flex',
@@ -31,7 +33,8 @@ export const playgroundStyles = stylex.create({
   },
   optionsPanel: {
     padding: 16,
-    backgroundColor: colorSchemeTokens.surfaceContainer,
-    borderRadius: shapeTokens.corner$md,
+    backgroundColor: colorSchemeTokens.surfaceContainerLow,
+    borderTopRightRadius: shapeTokens.corner$sm,
+    borderBottomRightRadius: shapeTokens.corner$sm,
   },
 });

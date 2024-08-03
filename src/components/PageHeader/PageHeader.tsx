@@ -40,7 +40,8 @@ export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
           Anchored
         </Typography>
         <Typography as='p' sx={styles.description} variant='body' size='lg'>
-          Description
+          A utility component that allows you to anchor a component to a
+          specific position relatively to another component.
         </Typography>
       </div>
     </div>
