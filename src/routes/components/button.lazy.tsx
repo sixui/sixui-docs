@@ -1,5 +1,6 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
+import { ButtonPlayground } from '~/components/ButtonPlayground';
 
 export const Route = createLazyFileRoute('/components/button')({
-  component: () => <div>Hello /components/button!</div>,
+  component: () => <ButtonPlayground />,
 });

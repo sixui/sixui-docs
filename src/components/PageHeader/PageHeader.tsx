@@ -21,7 +21,7 @@ const styles = stylex.create({
     marginRight: 'auto',
   },
   title: {
-    marginBottom: '0.3125rem',
+    marginBottom: '1rem',
   },
   description: {
     maxWidth: '28.125rem',
@@ -43,6 +43,7 @@ export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
           A utility component that allows you to anchor a component to a
           specific position relatively to another component.
         </Typography>
+        X
       </div>
     </div>
   );

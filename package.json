@@ -31,15 +31,18 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/pro-light-svg-icons": "^6.6.0",
+    "@fortawesome/pro-regular-svg-icons": "^6.6.0",
+    "@fortawesome/pro-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@material/material-color-utilities": "^0.3.0",
-    "@sixui/ui": "^0.0.407",
+    "@sixui/ui": "^0.0.408",
     "@tanstack/react-router": "^1.46.2",
     "install": "^0.13.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
