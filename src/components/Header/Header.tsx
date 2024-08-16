@@ -1,6 +1,10 @@
-import { faMoon, faSunBright } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconButton } from '@sixui/ui';
+import {
+  faMoon,
+  faSunBright,
+  faPalette,
+} from '@fortawesome/pro-regular-svg-icons';
+import { ColorInputField, IconButton } from '@sixui/ui';
 import { colorSchemeTokens } from '@sixui/ui/themes/base/colorScheme.stylex';
 import stylex from '@stylexjs/stylex';
 import { useTernaryDarkMode } from 'usehooks-ts';
@@ -49,8 +53,12 @@ export const Header: React.FC<IHeaderProps> = (props) => {
     <div {...stylex.props(styles.host, sx)}>
       <div {...stylex.props(styles.logo)}>Logo</div>
       <div {...stylex.props(styles.buttons)}>
+        <ColorInputField variant='outlined' />
         <IconButton
-          sx={sx}
+          variant='outlined'
+          icon={<FontAwesomeIcon icon={faPalette} />}
+        />
+        <IconButton
           variant='outlined'
           icon={<FontAwesomeIcon icon={faMoon} />}
           selectedIcon={<FontAwesomeIcon icon={faSunBright} />}
